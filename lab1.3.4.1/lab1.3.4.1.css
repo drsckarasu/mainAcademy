@@ -23,12 +23,7 @@ input[type="button"]{
     background-color: red;
     padding: 5px;
 }
-header input[type="button"]{
-    color: white;
-    background-color: blue;
-    padding: 15px;
-}
-footer input[type="button"]{
+header input[type="button"], footer input[type="button"]{
     color: white;
     background-color: blue;
     padding: 15px;
