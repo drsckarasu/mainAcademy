@@ -1,0 +1,27 @@
+.header{
+    background-color: #84ffc9;
+    padding: 15px;
+}
+.sidebar{
+    background-color: orange;
+    padding: 15px;
+    margin-top: 40px;
+    display: inline-block;
+}
+button{
+    padding: 15px;
+    color: white;
+}
+.header > button{
+    background-color: blueviolet;
+    margin-right: 20px;
+}
+.sidebar > button{
+    background-color: coral;
+    border: 1px solid brown;
+    width: 45%;
+    margin-right: 5%;
+}
+.sidebar > button:last-child{
+    margin-right: 0;
+}
