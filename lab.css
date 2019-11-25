@@ -1,0 +1,17 @@
+body{
+    height: 2000px;
+}
+.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    padding: 5px;
+    background-color: brown;
+    color: white;
+    font-weight: bold;
+    margin: 10px 0;
+}
+p{
+    margin: 0;
+    text-indent: 20px;
+}
