@@ -1,0 +1,114 @@
+body{
+    height: 100vh;
+    background: #2980B9;
+    background: linear-gradient(to top, #FFFFFF, #6DD5FA, #2980B9);
+}
+.cloud{
+    position: relative;
+}
+.cloud>div{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: white;
+    display: inline-block;
+    position: absolute;
+}
+.wrap{
+    top: 55%;
+    position: relative;
+    height: 100vh;
+
+}
+.red {
+    box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 500px;
+    width: 500px;
+    border-radius: 50%;
+    border: 40px solid red;
+    margin: auto;
+}
+.orange {
+    box-sizing: border-box;
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    height: 450px;
+    width: 450px;
+    border: 40px solid orange;
+    border-radius: 50%;
+    animation-delay: 1s;
+}
+.yellow{
+    box-sizing: border-box;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    height: 400px;
+    width: 400px;
+    border: 40px solid yellow;
+    border-radius: 50%;
+    animation-delay: 2s;
+}
+.green{
+    box-sizing: border-box;
+    position: absolute;
+    top: 75px;
+    left: 75px;
+    height: 350px;
+    width: 350px;
+    border: 40px solid green;
+    border-radius: 50%;
+    animation-delay: 3s;
+}
+.lightblue{
+    box-sizing: border-box;
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    height: 300px;
+    width: 300px;
+    border: 40px solid lightblue;
+    border-radius: 50%;
+    animation-delay: 4s;
+}
+.blue{
+    box-sizing: border-box;
+    position: absolute;
+    top: 125px;
+    left: 125px;
+    height: 250px;
+    width: 250px;
+    border: 40px solid blue;
+    border-radius: 50%;
+    animation-delay: 5s;
+}
+.violet{
+    box-sizing: border-box;
+    position: absolute;
+    top: 150px;
+    left: 150px;
+    height: 200px;
+    width: 200px;
+    border: 25px solid violet;
+    border-radius: 50%;
+    animation-delay: 6s;
+}
+.string{
+    box-shadow: 1px -4px 15px #FFFFFF;
+    opacity: 0.6;
+    animation-name: rainbow;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+@keyframes rainbow {
+    from{
+        opacity: 0.8;
+    }
+    to{
+        opacity: 1;
+    }
+}
