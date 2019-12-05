@@ -1,0 +1,48 @@
+body{
+    margin: 0;
+}
+header{
+    background-color: yellow;
+    color: white;
+    text-align: center;
+    font-family: "Comic Sans MS";
+    height: 300px;
+}
+nav{
+    display: flex;
+    flex-wrap: wrap;
+    height: 50px;
+    background-color: black;
+}
+nav > button{
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    outline: none;
+    border: 0;
+    cursor: pointer;
+    padding: 0 20px;
+}
+.main-Content{
+    display: flex;
+}
+.leftBar{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+}
+.leftBar > div{
+    padding: 20px;
+}
+.mainText{
+   width: 60%;
+    display: flex;
+    flex-direction: column;
+}
+.mainText > div{
+    padding: 20px;
+}
+.img{
+    height: 200px;
+     background-color: lightblue;
+}
