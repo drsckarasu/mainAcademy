@@ -1,0 +1,35 @@
+header{
+    display: flex;
+}
+header>div{
+    background-color: darkgrey;
+    width: 100px;
+    margin: 10px;
+    padding: 20px;
+    color: white;
+}
+.c1{
+    margin-left: 0;
+}
+.c2{
+    flex-grow: 2;
+}
+.c3{
+    flex-grow: 4;
+    text-align: right;
+    margin-right: 0;
+}
+.c3>p:first-child{
+    text-decoration: none;
+}
+.c3>p{
+    margin: 0;
+    text-decoration: underline
+}
+.horizontalLine{
+    border: 0.5px solid darkgrey;
+    margin: 10px 0;
+}
+.c4{
+    background-color: darkgrey;
+}
