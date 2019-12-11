@@ -19,10 +19,7 @@ header>div{
     text-align: right;
     margin-right: 0;
 }
-.c3>p:first-child{
-    text-decoration: none;
-}
-.c3>p{
+a{
     margin: 0;
     text-decoration: underline
 }
@@ -30,6 +27,103 @@ header>div{
     border: 0.5px solid darkgrey;
     margin: 10px 0;
 }
+.upper{
+    display: flex;
+}
+
 .c4{
     background-color: darkgrey;
+    color: white;
+    width: 20%;
+    align-self: flex-start;
+    margin: 10px;
+    margin-left: 0;
+    padding: 10px;
+}
+.upper-right{
+    width: 80%;
+}
+.c5{
+    background-color: #dadada;
+    padding: 10px;
+    margin: 10px;
+    margin-right: 0;
+}
+.c6{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+.square {
+    height: 150px;
+    width: 150px;
+    margin: 10px;
+    background-color: #dadada;
+}
+.bottom{
+    display: flex;
+}
+.c7{
+    background-color: darkgrey;
+    width: 20%;
+    height: 100px;
+    align-self: flex-end;
+    margin: 10px;
+    margin-left: 0;
+    padding: 10px;
+}
+.bottom-right{
+    display: flex;
+    width: 80%;
+}
+.c8,.c9{
+    background-color:  #dadada;
+    width: 50%;
+    box-sizing: border-box;
+    padding: 10px;
+    margin: 10px;
+}
+.c9{
+    margin-right: 0;
+}
+footer{
+    display: flex;
+    justify-content: space-between;
+}
+footer>div{
+    width: 100%;
+}
+.leftFoter{
+    display: flex;
+}
+ul.c11 {
+    list-style-type: square;
+}
+li{
+    margin: 5px;
+}
+p{
+    margin: 5px;
+}
+.c10,.c14{
+    margin: 10px 100px 0 10px;
+}
+.leftFoter,.centerFoter,.c12,.c13{
+    background-color: darkgrey;
+    color: white;
+}
+.c12,.c13{
+    height: 40%;
+    margin: 10px;
+    margin-right: 0;
+}
+.c13{
+    margin-top: 20px;
+}
+.leftFoter{
+    margin: 10px;
+    margin-left: 0;
+}
+.centerFoter{
+    margin: 10px;
 }
