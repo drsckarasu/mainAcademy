@@ -1,0 +1,82 @@
+body {
+  margin: 0;
+}
+.header {
+  background-color: darkorange;
+  display: inline-flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.left-btns {
+  padding: 15px 4px;
+}
+.left-btns__button {
+  background-color: darkorange;
+  color: black;
+  font-weight: bold;
+  font-size: 14px;
+  border: 0;
+}
+.left-btns__button:hover {
+  cursor: pointer;
+  color: darkgray;
+  transition: 0.3s;
+}
+.left-btns__button--active {
+  color: blue;
+}
+.right-btns {
+  padding: 15px 4px;
+}
+.right-btns__button {
+  background-color: darkorange;
+  color: black;
+  font-weight: bold;
+  font-size: 14px;
+  border: 0;
+}
+.right-btns__button:hover {
+  cursor: pointer;
+  color: darkgray;
+  transition: 0.3s;
+}
+.right-btns__button--active {
+  color: blue;
+}
+.articles {
+  display: flex;
+  flex-direction: column;
+}
+.articles__item {
+  padding: 10px 10px 10px 10px;
+}
+.articles__item__wrap h3 {
+  margin: 0 0 5px 0;
+}
+.articles__item__wrap img {
+  width: 20%;
+  padding: 5px;
+  box-sizing: border-box;
+}
+.articles__item__wrap p {
+  width: 80%;
+  float: right;
+  padding: 5px;
+  box-sizing: border-box;
+}
+.table-container {
+  display: flex;
+  flex-flow: column-reverse;
+  clear: both;
+}
+.table-container__table {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+.table-container__table tr,
+.table-container__table th,
+.table-container__table td {
+  border: 1px solid black;
+  padding: 5px;
+}
+/*# sourceMappingURL=styles.css.map */
