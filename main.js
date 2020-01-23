@@ -1,26 +1,44 @@
-let allusers = [];
-function saveUser() {
-    let user = {};
-    let fullName = document.getElementById("fullName").value;
-    user.name = fullName;
-    let age = document.getElementById("age").value;
-    user.age = age;
-    let phoneNumber = document.getElementById("phoneNumber").value;
-    user.phone = phoneNumber;
-    let email = document.getElementById("email").value;
-    user.email = email;
-    let city = document.getElementById("city").value;
-    user.city = city;
-    let postCode = document.getElementById("postCode").value;
-    user.post = postCode;
-    allusers.push(user);
-    emptyAllFields();
+let allArticles = [];
+function saveArticle() {
+        let articleObj = {};
+    let title=document.getElementById("title").value;
+    let imageUrl=document.getElementById("imagesrc").value;
+    let article=document.getElementById("text").value;
+    if(title==="" && imageUrl==="" && article==="") {
+        alert("All inputs should not be empty");
+    }else {
+        articleObj.title =title;
+        articleObj.image = imageUrl;
+        articleObj.article = article;
+        articleObj.sentences = article.split(".");
+        articleObj.sentencesNum = articleObj.sentences.length;
+        allArticles.push(articleObj);
+        let info=document.getElementById("info");
+        info.innerText = "The article has been saved";
+        
+        emptyFields();
+        console.dir(allArticles);
+    }
+
+    // this logic can be changed later
 }
-function emptyAllFields() {
-    document.getElementById("fullName").value='';
-    document.getElementById("age").value='';
-    document.getElementById("phoneNumber").value='';
-    document.getElementById("email").value='';
-    document.getElementById("city").value='';
-    document.getElementById("postCode").value='';
+function emptyFields() {
+    document.getElementById("title").value = "";
+    document.getElementById("imagesrc").value = "";
+    document.getElementById("text").value = "";
+      setTimeout(function () {
+          document.getElementById("info").innerText = "";
+    }, 4000);
+}
+function showArticles() {
+    for (var i=0; i<allArticles.length; i++){
+
+        let objContainer = document.createElement("div");
+        let obj = allArticles[i];
+        let text = document.createTextNode(obj.title);
+        objContainer.appendChild(text);
+
+        document.getElementById("articleContainer").appendChild(objContainer);
+
+    }
 }
