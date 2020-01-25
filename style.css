@@ -9,4 +9,9 @@
 }
 .mainButton:hover{
     cursor: pointer;
+    opacity: 60%;
+}
+.articleWrapper{
+    background-color: blue;
+    color: white;
 }
