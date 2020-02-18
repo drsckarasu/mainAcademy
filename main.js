@@ -2,6 +2,7 @@ let mainWrap = document.getElementById("mainWrapper");
 let userWrap = document.getElementById("userInfoWrap");
 getAllUsers();
 
+
 function getData(url, callback){
     let xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function() {
@@ -61,7 +62,20 @@ function createUserInfo(user) {
     emailField.innerHTML = user.email;
     let imageField = document.createElement("img");
     imageField.src = user.avatar;
+
+    let backButton = document.createElement("button");
+
+    backButton.addEventListener("click", function  () {
+        backInfo();
+    });
+    backButton.innerHTML = "Back";
+    backButton.className = "btn";
+
     userWrap.appendChild(imageField);
     userWrap.appendChild(nameField);
     userWrap.appendChild(emailField);
+    userWrap.appendChild(backButton);
+}
+function backInfo() {
+    getAllUsers();
 }
