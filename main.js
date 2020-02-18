@@ -2,7 +2,6 @@ let mainWrap = document.getElementById("mainWrapper");
 let userWrap = document.getElementById("userInfoWrap");
 getAllUsers();
 
-
 function getData(url, callback){
     let xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function() {
@@ -64,9 +63,8 @@ function createUserInfo(user) {
     imageField.src = user.avatar;
 
     let backButton = document.createElement("button");
-
     backButton.addEventListener("click", function  () {
-        backInfo();
+        window.history.go(0);
     });
     backButton.innerHTML = "Back";
     backButton.className = "btn";
@@ -75,7 +73,4 @@ function createUserInfo(user) {
     userWrap.appendChild(nameField);
     userWrap.appendChild(emailField);
     userWrap.appendChild(backButton);
-}
-function backInfo() {
-    getAllUsers();
 }
