@@ -7,7 +7,7 @@ function getData(url, callback){
     xhttp.onreadystatechange = function() {
         if (this.readyState === 4 && this.status === 200) {
             let myResponse = JSON.parse(this.responseText);
-            console.dir(this.responseText);
+            console.dir(myResponse);
             callback(myResponse.data);
         }
     };
