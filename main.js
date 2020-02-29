@@ -1,12 +1,32 @@
-var age = +prompt("Enter your age");
-var gender = prompt("Enter your gender");
+hideSign();
+function getHoroscope (target){
+    let url ="http://sandipbgt.com/theastrologer/api/horoscope/"+target.id+"/today/";
 
-if (age>34 && gender==="female"){
-    alert("You are woman older than 34 years");
-}else if(age<34 && gender==="female"){
-    alert("Your are woman younger than 34 years")
-}else if(age>34 && gender==="male"){
-    alert("Your are man older than 34 years")
-}else if(age<34 && gender==="male"){
-    alert("Your are man younger than 34 years")
+    let xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function() {
+        if (this.readyState === 4 && this.status === 200) {
+            let myResponse = JSON.parse(this.responseText);
+            console.dir(myResponse);
+            let sunName = document.getElementById("sName");
+            sunName.innerText = myResponse.sunsign;
+            let Horoscope = document.getElementById("descript");
+            Horoscope.innerText = myResponse.horoscope;
+            showSign();
+        }
+    };
+    xhttp.open("GET", url, true);
+    xhttp.send();
+}
+function showSign() {
+    let elem = document.getElementById("signDescription");
+    elem.style.display = "block";
+    let elem2 = document.getElementById("signWrap");
+    elem2.style.display = "none";
+
+}
+function hideSign() {
+    let elem = document.getElementById("signDescription");
+    elem.style.display = "none";
+    let elem2 = document.getElementById("signWrap");
+    elem2.style.display = "block";
 }
