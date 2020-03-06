@@ -1,12 +1,15 @@
-var age = +prompt("Enter your age");
-var gender = prompt("Enter your gender");
+function register() {
+    let users = [];
+    let user = {};
 
-if (age>34 && gender==="female"){
-    alert("You are woman older than 34 years");
-}else if(age<34 && gender==="female"){
-    alert("Your are woman younger than 34 years")
-}else if(age>34 && gender==="male"){
-    alert("Your are man older than 34 years")
-}else if(age<34 && gender==="male"){
-    alert("Your are man younger than 34 years")
-}
+    let email = document.getElementById("email");
+    let fullname = document.getElementById("fullname");
+    let pass = document.getElementById("password");
+    let confpass = document.getElementById("confirmpass");
+    if(pass === confpass){
+        user.email = email;
+        user.fullname = fullname;
+        user.password = pass;
+        users.push(user);
+    }
+ }
